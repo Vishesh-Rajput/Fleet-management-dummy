@@ -14,7 +14,7 @@
     "format:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "api:lint": "redocly lint",
-"api:preview": "redocly preview-docs packages/api-specs/specs/auth.yaml"
+    "api:preview": "redocly preview-docs packages/api-specs/specs/auth.yaml"
   },
   "repository": {
     "type": "git",
@@ -29,10 +29,18 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@redocly/cli": "^2.57.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "@types/pg": "^8.23.1",
     "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.9.9",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.71.0"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "epxress": "^0.0.1-security",
+    "pg": "^8.23.1"
   }
 }
